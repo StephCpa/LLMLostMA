@@ -1,0 +1,16 @@
+name: Validate research plan
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  offline-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check plan and run offline tests
+        run: |
+          python3 tools/check_plan.py
+          python3 -m unittest discover -s tests -v

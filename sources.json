@@ -1,0 +1,307 @@
+{
+  "as_of": "2026-10-10",
+  "search_scope": "targeted_not_exhaustive",
+  "novelty_status": "not_established",
+  "records": [
+    {
+      "id": "S01",
+      "title": "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs (HiddenBench)",
+      "url": "https://proceedings.mlr.press/v306/li26ej.html",
+      "status": "ICML 2026 official proceedings",
+      "checked_scope": "Official abstract and bibliographic metadata",
+      "boundary": "65 tasks; reported 30.1% distributed-group vs 80.7% full-information single-agent accuracy. Not a matched-cost superiority claim. Structured protocol already proposed.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S02",
+      "title": "PropUQ-MAS: Propagation-Aware Uncertainty Quantification for LLM Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2608.22130v3",
+      "status": "arXiv v3; author comments report EMNLP 2026 Main acceptance",
+      "checked_scope": "abs Comments and version history",
+      "boundary": "The acceptance note exists. Final proceedings not fetched. UQ metrics do not by themselves establish correction utility.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S03",
+      "title": "When Truth Is Distributed: Misinformation Derails Collective Fact Recovery in LLM-Based Multi-Agent Systems",
+      "url": "https://arxiv.org/html/2608.03421v1",
+      "status": "arXiv v1 inspected for historical name",
+      "checked_scope": "Abstract, section 3, paired conditions and source propagation",
+      "boundary": "Hi-Agreement explicitly appears in v1. Honest/deceptive worlds and false-root persistence already studied; not a proof of natural attack prevalence.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S04",
+      "title": "Why Do Multi-Agent LLM Systems Fail?",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/hash/b1041e52d3be19f0a9bc491657488e4a-Abstract-Datasets_and_Benchmarks_Track.html",
+      "status": "NeurIPS 2025 Datasets and Benchmarks Track",
+      "checked_scope": "Official proceedings heading and abstract",
+      "boundary": "The track is explicitly listed. Spotlight separately not rechecked this turn.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S05",
+      "title": "From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration",
+      "url": "https://arxiv.org/html/2603.04474v2",
+      "status": "arXiv v2",
+      "checked_scope": "HTML VI-D/VI-E/VI-F and limitations; PDF request failed",
+      "boundary": "Tri-state Green/Red/Yellow, lineage, external verification, blocking and rollback are in the method. No implementation reproduction.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S06",
+      "title": "StateWise: Diagnosing and Repairing Persistent Operational State Before Agent Actions",
+      "url": "https://arxiv.org/html/2610.05241v1",
+      "status": "arXiv v1",
+      "checked_scope": "Abstract, paired state tests and limitations",
+      "boundary": "Single-agent persistent operational-state repair. Adjacent module, not evidence for peer-network repair.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S07",
+      "title": "Consilience: Conformally Calibrated Communication Control for Hidden-Profile Multi-Agent Reasoning",
+      "url": "https://arxiv.org/abs/2608.20564v1",
+      "status": "arXiv v1",
+      "checked_scope": "Abstract",
+      "boundary": "Selects challenge/clarify/seek evidence/route and speaker. Round-conditional marginal guarantee is not simultaneous multi-round or arbitrary distribution-shift safety.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S08",
+      "title": "Agent Q-Mix: Selecting the Right Action for LLM Multi-Agent Systems through Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2604.00344v1",
+      "status": "arXiv v1",
+      "checked_scope": "Abstract",
+      "boundary": "Learns decentralized communication with centralized training, topology-aware state and token-cost tradeoff. General communication action selection is crowded.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S09",
+      "title": "Cost-Effective Communication: An Auction-based Method for Language Agent Interaction (DALA)",
+      "url": "https://arxiv.org/abs/2511.13193v2",
+      "status": "arXiv v2, 2026-04-24",
+      "checked_scope": "Abstract and version history",
+      "boundary": "Auction-based speaking selection. Not every action in the old proposal is identical, but cost-aware communication is occupied.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S10",
+      "title": "Delayed Verification Destabilizes Multi-Agent LLM Belief: Instability Thresholds and Optimal Corrector Placement",
+      "url": "https://arxiv.org/abs/2606.27409v2",
+      "status": "arXiv v2, 2026-09-16",
+      "checked_scope": "Abstract and revision notes",
+      "boundary": "Updated version limits oscillation interpretation: grounded factual answering eliminates the effect. Do not universalize signed-belief instability.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S11",
+      "title": "Reliability-Contagion Feasibility in LLM Multi-Agent Networks",
+      "url": "https://arxiv.org/abs/2607.21912v1",
+      "status": "arXiv v1",
+      "checked_scope": "Abstract",
+      "boundary": "Topology findings depend on fixed exposure per edge vs fixed sender budget. Simulations and controlled LLM experiments are distinct evidence.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S12",
+      "title": "Governed Shared Memory for Multi-Agent LLM Systems",
+      "url": "https://arxiv.org/abs/2606.24535v1",
+      "status": "arXiv v1",
+      "checked_scope": "Abstract",
+      "boundary": "Temporal supersession, scoped retrieval, provenance and production governance; explicitly not a baseline comparison.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S13",
+      "title": "Easier to Mislead Than to Correct: Harmful and Beneficial Revision in LLM Conformity",
+      "url": "https://arxiv.org/html/2606.01637v2",
+      "status": "arXiv v2, 2026-06-06",
+      "checked_scope": "Main protocol, 3.5, 4.3; PDF page 7 Figure 4 inspected",
+      "boundary": "Simulated peers; harmful and beneficial rates condition on different initial-answer subsets. CoT 63.9 to 36.5 harmful, 52.7 to 32.5 beneficial under respective conditions; not our D4 paired estimate.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S14",
+      "title": "Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking",
+      "url": "https://arxiv.org/html/2608.21230v1",
+      "status": "arXiv v1",
+      "checked_scope": "Protocol, Table 6, limitations; PDF page 18 inspected",
+      "boundary": "Corpus N accuracy 0.8583 to 0.0417 with provenance weight, a constructed worst case. Plain false assertions are explicitly not instruction injections. Proposed occupancy remedy not evaluated.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S15",
+      "title": "Trust propagation and structural containment in Multi-agent LLM pipelines",
+      "url": "https://arxiv.org/html/2609.17648v1",
+      "status": "arXiv v1",
+      "checked_scope": "Authorization and independent-policy sections, Observer methods; parsed PDF; screenshot unavailable",
+      "boundary": "Already separates source authentication from permission and measures legitimate-task overblocking. Do not claim signed action binding or utility-preserving sanitization as new.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S16",
+      "title": "PIGuard: Prompt Injection Guardrail via Mitigating Overdefense for Free",
+      "url": "https://aclanthology.org/2025.acl-long.1468/",
+      "status": "ACL 2025 official proceedings",
+      "checked_scope": "Official abstract and metadata",
+      "boundary": "NotInject tests benign trigger-rich samples. General over-defense and benign retention are not new; corrections-in-network is a narrower proposed test.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S17",
+      "title": "The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents",
+      "url": "https://aclanthology.org/2025.acl-long.1435/",
+      "status": "ACL 2025 official proceedings",
+      "checked_scope": "Official abstract and metadata",
+      "boundary": "Task-alignment checking with safety/utility tradeoff. Required strong baseline for permission and action claims.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S18",
+      "title": "ActGuard: Pre-execution Action Auditing against Indirect Prompt Injection in LLM Agents",
+      "url": "https://arxiv.org/abs/2609.14987",
+      "status": "2026-09-14 preprint; version not pinned this turn",
+      "checked_scope": "Primary abstract",
+      "boundary": "Audits proposed actions, localizes triggering evidence and masks confirmed malicious spans. Selective sanitization is not vacant.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S19",
+      "title": "Unlocking the Power of Multi-Agent LLM for Reasoning: From Lazy Agents to Deliberation",
+      "url": "https://arxiv.org/abs/2511.02303v1",
+      "status": "arXiv v1; prior assessment has ICLR 2026 record",
+      "checked_scope": "Abstract; prior method reading not rerun",
+      "boundary": "Direct LiC-in-two-agent restart already exists. This turn did not rerun venue proof or experiment.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S20",
+      "title": "When Memory Updates but Behavior Does Not: Repairing Implicit Stale Dependencies in Personalized Agent Responses (StateAuditor)",
+      "url": "https://arxiv.org/abs/2608.01619v1",
+      "status": "arXiv v1",
+      "checked_scope": "Abstract and limitations",
+      "boundary": "Provenance/chronology verification is not semantic supersession. Already uses state-to-draft audits; external effects have explicit bounds.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S21",
+      "title": "Grounded Continuation: A Linear-Time Runtime Verifier for LLM Conversations",
+      "url": "https://arxiv.org/abs/2605.14175v3",
+      "status": "arXiv v3, 2026-10-05",
+      "checked_scope": "Latest abstract and version history",
+      "boundary": "Dependency/retraction engine plus Interpreter; v3 reports raw-text update extraction. Not merely an oracle graph baseline. Proof depends on map semantics.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S22",
+      "title": "From Faulty Memories to Corrected Actions: Dependency-Guided Rollback Repair for Memory-Augmented Agents",
+      "url": "https://arxiv.org/abs/2608.10502v1",
+      "status": "arXiv v1",
+      "checked_scope": "Abstract",
+      "boundary": "Single-agent memory/action rollback is a direct D1 neighbor, not an untouched multi-agent solution.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S23",
+      "title": "Invalidation Contracts for Cross-Episode Agent Memory",
+      "url": "https://arxiv.org/abs/2609.00243v1",
+      "status": "arXiv v1",
+      "checked_scope": "Abstract and declared scope",
+      "boundary": "Already separates validity from planner compliance; fine-grained versioning and retained cache utility. Oracle validity must not be confused with learned behavior.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S24",
+      "title": "How does Adversarial Influence Scale in Multi-Agent Systems?",
+      "url": "https://arxiv.org/abs/2609.30028v1",
+      "status": "arXiv v1",
+      "checked_scope": "Abstract",
+      "boundary": "Adversarial scale is neighboring, not a warrant to add topology and attacker search to Stage 0.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S25",
+      "title": "From Process Loss to Assembly Bonus: Human-Grounded Diagnosis of Multi-Agent LLM Collaboration",
+      "url": "https://arxiv.org/abs/2609.13261v1",
+      "status": "arXiv v1",
+      "checked_scope": "Abstract",
+      "boundary": "Distributed collaboration diagnosis already studied; no head-to-head reproduction this turn.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S26",
+      "title": "LLM Agents for Deliberative Collaboration: A Study on Joint Decision Making Under Partial Observability",
+      "url": "https://arxiv.org/abs/2607.06157v1",
+      "status": "arXiv v1",
+      "checked_scope": "Abstract",
+      "boundary": "Joint decision-making under partial observability is an existing task class.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S27",
+      "title": "LLMs Get Lost In Multi-Turn Conversation",
+      "url": "https://arxiv.org/abs/2505.06120",
+      "status": "Original root paper; prior official ICLR 2026 award check",
+      "checked_scope": "Inherited prior analysis, not fully reread this turn",
+      "boundary": "Temporal instruction splitting is not a per-edge failure probability. Same-network extension alone is not a contribution.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S28",
+      "title": "Intent Mismatch Causes LLMs to Get Lost in Multi-Turn Conversation",
+      "url": "https://arxiv.org/abs/2602.07338v1",
+      "status": "arXiv v1",
+      "checked_scope": "Abstract",
+      "boundary": "Mediator/assistant separation already addresses intent consolidation.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S29",
+      "title": "AgentVisor: Defending LLM Agents Against Prompt Injection via Semantic Virtualization",
+      "url": "https://arxiv.org/abs/2604.24118",
+      "status": "2026 preprint; version not pinned this turn",
+      "checked_scope": "Primary abstract",
+      "boundary": "Semantic privilege separation and one-shot correction already studied; not equivalent to this network experiment.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    },
+    {
+      "id": "S30",
+      "title": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "url": "https://arxiv.org/abs/2406.13352",
+      "status": "Historical evaluation infrastructure (2024)",
+      "checked_scope": "Abstract",
+      "boundary": "Dynamic tool-agent security/utility evaluation exists. Reuse only license-permitted artifacts with explicit adaptation.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false
+    }
+  ]
+}
