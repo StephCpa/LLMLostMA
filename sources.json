@@ -1,17 +1,30 @@
 {
   "as_of": "2026-10-10",
+  "plan_version": "0.2.0",
   "search_scope": "targeted_not_exhaustive",
   "novelty_status": "not_established",
+  "recheck": {
+    "date": "2026-10-10",
+    "method": "web_search_index_only",
+    "limits": "WebFetch failed DNS for every host and the sandbox proxy refused arxiv.org, export.arxiv.org, aclanthology.org and api.semanticscholar.org; no page, PDF or version history was opened this round.",
+    "result": "S01-S30 titles and identifiers all located; venue updates for S01, S09, S16, S17, S19, S27, S30; one unresolved numeric discrepancy (S13)."
+  },
   "records": [
     {
       "id": "S01",
       "title": "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs (HiddenBench)",
       "url": "https://proceedings.mlr.press/v306/li26ej.html",
-      "status": "ICML 2026 official proceedings",
+      "status": "ICML 2026 official proceedings (PMLR 306); arXiv preprint 2505.11556, earlier titled \"HiddenBench: Assessing Collective Reasoning in Multi-Agent LLMs via Hidden Profile Tasks\"",
       "checked_scope": "Official abstract and bibliographic metadata",
       "boundary": "65 tasks; reported 30.1% distributed-group vs 80.7% full-information single-agent accuracy. Not a matched-cost superiority claim. Structured protocol already proposed.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D3_neighbor",
+        "D2_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Index confirms PMLR v306 entry, ICML 2026 poster page, authors Li/Naito/Shirado, 65 tasks and 30.1% vs 80.7%."
     },
     {
       "id": "S02",
@@ -21,7 +34,12 @@
       "checked_scope": "abs Comments and version history",
       "boundary": "The acceptance note exists. Final proceedings not fetched. UQ metrics do not by themselves establish correction utility.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D3_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed via index. The EMNLP 2026 acceptance comment was not visible in snippets and no lab or proceedings listing was found; no contradiction either. Keep as author-reported only."
     },
     {
       "id": "S03",
@@ -31,7 +49,13 @@
       "checked_scope": "Abstract, section 3, paired conditions and source propagation",
       "boundary": "Hi-Agreement explicitly appears in v1. Honest/deceptive worlds and false-root persistence already studied; not a proof of natural attack prevalence.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D3_neighbor",
+        "D4_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed; snippets showed only prompt/schema text, so findings were not re-checked this round."
     },
     {
       "id": "S04",
@@ -41,7 +65,12 @@
       "checked_scope": "Official proceedings heading and abstract",
       "boundary": "The track is explicitly listed. Spotlight separately not rechecked this turn.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D3_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: NeurIPS 2025 D&B listing and mlanthology entry confirmed (Cemri et al.; 1,600+ traces, 14 failure modes). Spotlight is asserted only by a secondary blog and remains unconfirmed."
     },
     {
       "id": "S05",
@@ -51,7 +80,13 @@
       "checked_scope": "HTML VI-D/VI-E/VI-F and limitations; PDF request failed",
       "boundary": "Tri-state Green/Red/Yellow, lineage, external verification, blocking and rollback are in the method. No implementation reproduction.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D1_neighbor",
+        "D3_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (Xie et al.). alphaXiv lists v2 dated 2026-05-11. v1 abstract reports defense success 0.32 to >0.89; v2 wording reportedly differs (final infection prevented in >=89% of runs). Quote numbers per version."
     },
     {
       "id": "S06",
@@ -61,7 +96,12 @@
       "checked_scope": "Abstract, paired state tests and limitations",
       "boundary": "Single-agent persistent operational-state repair. Adjacent module, not evidence for peer-network repair.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D1_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (Peng et al., submitted 2026-10-04): record-level counterfactual replanning, hierarchical resolver, independent state-action check; 150 executable coding-agent cases."
     },
     {
       "id": "S07",
@@ -71,7 +111,12 @@
       "checked_scope": "Abstract",
       "boundary": "Selects challenge/clarify/seek evidence/route and speaker. Round-conditional marginal guarantee is not simultaneous multi-round or arbitrary distribution-shift safety.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D2_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (posted 2026-08-20 per secondary coverage); 12 models on HiddenBench-style tasks per news summary, not verified."
     },
     {
       "id": "S08",
@@ -81,17 +126,27 @@
       "checked_scope": "Abstract",
       "boundary": "Learns decentralized communication with centralized training, topology-aware state and token-cost tradeoff. General communication action selection is crowded.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D2_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (2026-04-01): QMIX-based CTDE over per-agent communication actions with accuracy/token-cost reward."
     },
     {
       "id": "S09",
       "title": "Cost-Effective Communication: An Auction-based Method for Language Agent Interaction (DALA)",
       "url": "https://arxiv.org/abs/2511.13193v2",
-      "status": "arXiv v2, 2026-04-24",
+      "status": "arXiv v2, 2026-04-24; AAAI proceedings entry located (ojs.aaai.org article 40182)",
       "checked_scope": "Abstract and version history",
       "boundary": "Auction-based speaking selection. Not every action in the old proposal is identical, but cost-aware communication is occupied.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D2_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: AAAI OJS entry found via index; volume and year not opened this round."
     },
     {
       "id": "S10",
@@ -101,7 +156,12 @@
       "checked_scope": "Abstract and revision notes",
       "boundary": "Updated version limits oscillation interpretation: grounded factual answering eliminates the effect. Do not universalize signed-belief instability.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D3_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (single author Itkin, submitted 2026-06-25); greedy (1-1/e) corrector placement does not imply optimal static MSE."
     },
     {
       "id": "S11",
@@ -111,7 +171,12 @@
       "checked_scope": "Abstract",
       "boundary": "Topology findings depend on fixed exposure per edge vs fixed sender budget. Simulations and controlled LLM experiments are distinct evidence.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D3_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (Niu, Shu, Zhao); correction-aware susceptible/exposed/infectious/corrected model; authors call the empirical scope deliberately small."
     },
     {
       "id": "S12",
@@ -121,7 +186,12 @@
       "checked_scope": "Abstract",
       "boundary": "Temporal supersession, scoped retrieval, provenance and production governance; explicitly not a baseline comparison.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D1_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (Margalit et al., 2026-06-23): MemClaw service and ArgusFleet harness; no baseline comparison by design."
     },
     {
       "id": "S13",
@@ -131,7 +201,13 @@
       "checked_scope": "Main protocol, 3.5, 4.3; PDF page 7 Figure 4 inspected",
       "boundary": "Simulated peers; harmful and beneficial rates condition on different initial-answer subsets. CoT 63.9 to 36.5 harmful, 52.7 to 32.5 beneficial under respective conditions; not our D4 paired estimate.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor",
+        "conformity"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (Qu, Fu, Hu; 2026-06-01). A third-party overview reports 62.9% harmful (all-wrong) vs 51.5% beneficial (all-correct), which differs from the 63.9/52.7 pair read from Fig. 4 last round; may be a different aggregation. Unresolved: re-read Fig. 4 before quoting either pair."
     },
     {
       "id": "S14",
@@ -141,7 +217,12 @@
       "checked_scope": "Protocol, Table 6, limitations; PDF page 18 inspected",
       "boundary": "Corpus N accuracy 0.8583 to 0.0417 with provenance weight, a constructed worst case. Plain false assertions are explicitly not instruction injections. Proposed occupancy remedy not evaluated.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed. Secondary coverage describes a separate LongMemEval experiment (1.2% poisoning, 0.850 to 0.300) and 0/360 detection by write-time screening; distinct from the Table 6 figure cited here."
     },
     {
       "id": "S15",
@@ -151,27 +232,44 @@
       "checked_scope": "Authorization and independent-policy sections, Observer methods; parsed PDF; screenshot unavailable",
       "boundary": "Already separates source authentication from permission and measures legitimate-task overblocking. Do not claim signed action binding or utility-preserving sanitization as new.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor",
+        "D4_baseline_candidate"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID/authors confirmed (Safin, Zisad, Shatabda, Hasan): 4-agent LangGraph pipeline; with authorization a compromised Validator reaches 100% judgment bypass but 0% unsafe action; Observer cuts hijack false positives 49% to 7%; 3 seeds, 60 labeled tasks."
     },
     {
       "id": "S16",
       "title": "PIGuard: Prompt Injection Guardrail via Mitigating Overdefense for Free",
       "url": "https://aclanthology.org/2025.acl-long.1468/",
-      "status": "ACL 2025 official proceedings",
+      "status": "ACL 2025 official proceedings (pp. 30420-30437); preprint arXiv 2410.22770 titled \"InjecGuard\"",
       "checked_scope": "Official abstract and metadata",
       "boundary": "NotInject tests benign trigger-rich samples. General over-defense and benign retention are not new; corrections-in-network is a narrower proposed test.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor",
+        "D4_baseline_candidate"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Confirmed. NotInject has 339 benign trigger-word samples. PIGuard is a separate DeBERTa-v3 classifier with public weights (code leolee99/PIGuard), not a prompt on the peer model."
     },
     {
       "id": "S17",
       "title": "The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection in LLM Agents",
       "url": "https://aclanthology.org/2025.acl-long.1435/",
-      "status": "ACL 2025 official proceedings",
+      "status": "ACL 2025 official proceedings (pp. 29680-29697); preprint arXiv 2412.16682",
       "checked_scope": "Official abstract and metadata",
       "boundary": "Task-alignment checking with safety/utility tradeoff. Required strong baseline for permission and action claims.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_baseline_candidate"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Confirmed (Jia, Wu, Qin, Squicciarini). Authors report AgentDojo/GPT-4o ASR 2.07% with 69.79% utility."
     },
     {
       "id": "S18",
@@ -181,17 +279,28 @@
       "checked_scope": "Primary abstract",
       "boundary": "Audits proposed actions, localizes triggering evidence and masks confirmed malicious spans. Selective sanitization is not vacant.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_baseline_candidate"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (posted 2026-09): chunk-level influence scoring on the proposed action, flag-and-mask re-evaluation. Benchmark numbers not seen in snippets."
     },
     {
       "id": "S19",
       "title": "Unlocking the Power of Multi-Agent LLM for Reasoning: From Lazy Agents to Deliberation",
       "url": "https://arxiv.org/abs/2511.02303v1",
-      "status": "arXiv v1; prior assessment has ICLR 2026 record",
+      "status": "ICLR 2026 official proceedings; arXiv v1 2511.02303",
       "checked_scope": "Abstract; prior method reading not rerun",
       "boundary": "Direct LiC-in-two-agent restart already exists. This turn did not rerun venue proof or experiment.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "root",
+        "D1_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: ICLR 2026 proceedings page and poster located via index (Zhang et al.); resolves the venue question left open last round."
     },
     {
       "id": "S20",
@@ -201,7 +310,12 @@
       "checked_scope": "Abstract and limitations",
       "boundary": "Provenance/chronology verification is not semantic supersession. Already uses state-to-draft audits; external effects have explicit bounds.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D1_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (Sun and He, 2026-08-03). StateAuditor targets the implicit policy adaptation gap defined by STALE [S50]; .686 to .736 under STALE strict protocol; no gain on a harder authored set."
     },
     {
       "id": "S21",
@@ -211,7 +325,12 @@
       "checked_scope": "Latest abstract and version history",
       "boundary": "Dependency/retraction engine plus Interpreter; v3 reports raw-text update extraction. Not merely an oracle graph baseline. Proof depends on map semantics.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D1_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (He, Dong, Huang; v1 2026-05-13). v3 date not visible in snippets; keep last round's version pin."
     },
     {
       "id": "S22",
@@ -221,7 +340,12 @@
       "checked_scope": "Abstract",
       "boundary": "Single-agent memory/action rollback is a direct D1 neighbor, not an untouched multi-agent solution.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D1_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed. Self-reported 85.3% vs 77.3% recovery on 150 cases and 68.0% vs 54.0% on a 50-case LongMemEval-V2 stress set; cannot undo irreversible side effects."
     },
     {
       "id": "S23",
@@ -231,7 +355,12 @@
       "checked_scope": "Abstract and declared scope",
       "boundary": "Already separates validity from planner compliance; fine-grained versioning and retained cache utility. Oracle validity must not be confused with learned behavior.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D1_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (Wu and Canedo): about 9,400 episodes across seven models; first-try compliance varies strongly by model while validity is protocol-determined."
     },
     {
       "id": "S24",
@@ -241,7 +370,13 @@
       "checked_scope": "Abstract",
       "boundary": "Adversarial scale is neighboring, not a warrant to add topology and attacker search to Stage 0.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "attack_or_threat",
+        "conformity"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (Wu, Cekinmez, Liao, Narasimhan, Griffiths; 2026-09-24): defection rises linearly with deceiver proportion; LLM agents defect even when deceivers are a minority; groups of 2-21."
     },
     {
       "id": "S25",
@@ -251,7 +386,12 @@
       "checked_scope": "Abstract",
       "boundary": "Distributed collaboration diagnosis already studied; no head-to-head reproduction this turn.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D3_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed; human baseline of 500 groups; snippet table values truncated."
     },
     {
       "id": "S26",
@@ -261,17 +401,27 @@
       "checked_scope": "Abstract",
       "boundary": "Joint decision-making under partial observability is an existing task class.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D3_neighbor"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (Wang et al., 2026-07-07): joint decisions under asymmetric observations; deliberation can enable error correction."
     },
     {
       "id": "S27",
       "title": "LLMs Get Lost In Multi-Turn Conversation",
       "url": "https://arxiv.org/abs/2505.06120",
-      "status": "Original root paper; prior official ICLR 2026 award check",
+      "status": "ICLR 2026 Outstanding Paper (ICLR blog, 2026-04-23); arXiv 2505.06120",
       "checked_scope": "Inherited prior analysis, not fully reread this turn",
       "boundary": "Temporal instruction splitting is not a per-edge failure probability. Same-network extension alone is not a contribution.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "root"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Award confirmed via the ICLR blog announcement; 39% average multi-turn drop across six tasks; 200k+ simulated conversations."
     },
     {
       "id": "S28",
@@ -281,7 +431,12 @@
       "checked_scope": "Abstract",
       "boundary": "Mediator/assistant separation already addresses intent consolidation.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "root"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed (Liu et al., 2026-02)."
     },
     {
       "id": "S29",
@@ -291,17 +446,353 @@
       "checked_scope": "Primary abstract",
       "boundary": "Semantic privilege separation and one-shot correction already studied; not equivalent to this network experiment.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_baseline_candidate"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Title/ID confirmed: Guest proposes tool calls, Visor audits them without seeing raw external context. A secondary write-up reports 0.65% ASR at 1.45% utility cost (unverified)."
     },
     {
       "id": "S30",
       "title": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
       "url": "https://arxiv.org/abs/2406.13352",
-      "status": "Historical evaluation infrastructure (2024)",
+      "status": "NeurIPS 2024 Datasets and Benchmarks Track (official proceedings); arXiv 2406.13352",
       "checked_scope": "Abstract",
       "boundary": "Dynamic tool-agent security/utility evaluation exists. Reuse only license-permitted artifacts with explicit adaptation.",
       "checked_at": "2026-10-10",
-      "experiment_reproduced": false
+      "experiment_reproduced": false,
+      "roles": [
+        "infrastructure"
+      ],
+      "access_level": "prior_round_direct_read",
+      "recheck_note": "2026-10-10 index recheck: Official proceedings entry confirmed; 97 tasks; models solve <66% of tasks without attack."
+    },
+    {
+      "id": "S31",
+      "title": "ARGUS: Defending LLM Agents Against Context-Aware Prompt Injection",
+      "url": "https://arxiv.org/abs/2605.03378",
+      "status": "arXiv v1, 2026-05",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Causal-provenance auditor: each state-changing action must be supported by a complete benign causal chain over runtime spans; AgentLure (4 domains, 8 attack vectors; one summary reports 320 samples) targets context-dependent tasks. Already occupies \"keep benign fields of the same observation, block actions driven by injected spans\" for single-agent tool returns; D4 must differ through live peer relay and the paired same-correction design.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor",
+        "D4_baseline_candidate"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S32",
+      "title": "AI Agents May Always Fall for Prompt Injections",
+      "url": "https://arxiv.org/abs/2605.17634",
+      "status": "arXiv v1, 2026-05-17 (Abdelnabi and Bagdasarian)",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Argues data-instruction separation both misses contextual-manipulation attacks and degrades contextually appropriate behavior; reframes injection with Contextual Integrity (misrepresented flows, manipulated norms, mixed flows). \"Strict separation loses legitimate behavior\" is therefore an existing argument, not a D4 finding. A secondary \"impossibility\" framing is not confirmed in the abstract.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S33",
+      "title": "Defeating Prompt Injections by Design (CaMeL)",
+      "url": "https://arxiv.org/abs/2503.18813",
+      "status": "arXiv v2, 2025",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Extracts control and data flow from the trusted query so untrusted data cannot change program flow; capabilities enforce policy at tool calls. v2 abstract: 77% of AgentDojo tasks with provable security vs 84% undefended (v1 reported 67%). The proposed evidence/operation split is a special case of this design and needs a faithful-adaptation comparison first. Code: google-research/camel-prompt-injection.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_baseline_candidate"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S34",
+      "title": "Securing AI Agents with Information-Flow Control (FIDES)",
+      "url": "https://arxiv.org/abs/2505.23643",
+      "status": "arXiv v2, 2025-09-03",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Planner that tracks confidentiality and integrity labels, deterministically enforces policies and selectively hides information; formal model of planner expressiveness. Integrity labels on peer-relayed evidence are an existing mechanism. Code: microsoft/fides.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_baseline_candidate"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S35",
+      "title": "AgentSentry: Mitigating Indirect Prompt Injection in LLM Agents via Temporal Causal Diagnostics and Context Purification",
+      "url": "https://arxiv.org/abs/2602.22724",
+      "status": "arXiv v1, 2026-02-26",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Counterfactual re-execution at tool-return boundaries locates takeover points; purification removes attacker-induced deviations while keeping task-relevant evidence; self-reported Utility Under Attack 74.55% on AgentDojo. Evidence-preserving purification is occupied for single-agent tool use.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor",
+        "D4_baseline_candidate"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S36",
+      "title": "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents",
+      "url": "https://proceedings.mlr.press/v267/zhu25z.html",
+      "status": "ICML 2025 official proceedings (PMLR 267); arXiv 2502.05174",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Masked re-execution with tool-call comparison flags actions that persist when the user task is masked. A legitimate peer correction that changes required actions may or may not trip this signal; test rather than assume. Code: kaijiezhu11/MELON.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_baseline_candidate"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S37",
+      "title": "LlamaFirewall: An open source guardrail system for building secure AI agents",
+      "url": "https://arxiv.org/abs/2505.03574",
+      "status": "arXiv v1, 2025-05 (Meta)",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "PromptGuard 2 (86M/22M BERT-style classifier), experimental AlignmentCheck chain-of-thought auditor, and CodeShield. Secondary sources report AgentDojo ASR about 17.6% to 1.7% (unverified). Open weights make it a practical B2/B3 option, subject to the bypass results in S38.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_baseline_candidate"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S38",
+      "title": "Breaking and Fixing Defenses Against Control-Flow Hijacking in Multi-Agent Systems (ControlValve)",
+      "url": "https://arxiv.org/abs/2510.17276",
+      "status": "ICLR 2026 (poster listing); arXiv v2, 2026-03",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Control-flow hijacking evades alignment checks of inter-agent messages (e.g. LlamaFirewall) even with strong LLM checkers; argues safety and functionality goals conflict in multi-agent systems; proposes permitted control-flow graphs plus zero-shot per-invocation rules. Directly constrains any alignment-check arm and the D4 premise.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor",
+        "D4_baseline_candidate",
+        "attack_or_threat"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S39",
+      "title": "The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injections",
+      "url": "https://arxiv.org/abs/2510.09023",
+      "status": "arXiv v1, 2025-10-10; USENIX Security 2026 listing",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Adaptive attacks (gradient, RL, random search, human-guided) bypassed 12 recent defenses with >90% ASR for most, many of which had reported near-zero ASR. Frozen one-shot attack results in this plan are non-adaptive lower bounds on attack success.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "attack_or_threat",
+        "evaluation_method"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S40",
+      "title": "The Price of Safety: Benign-Case Utility and Token Overhead of Memory-Poisoning Defenses in LLM Agents",
+      "url": "https://arxiv.org/abs/2609.22818",
+      "status": "arXiv v1, 2026-09",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Write-time defenses showed no resolvable benign-case cost (95% CI about +/-4.5 pts); a read-time reranker cost -4.4 pts (CI [-9.0,-0.05], McNemar p=0.064) and falsely quarantined legitimate memories on 33.6% of adjudicated items. Small study (5 conversations x 3 runs). Benign-case cost of defenses is already measured; intercept position matters.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor",
+        "evaluation_method"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S41",
+      "title": "One Axis, No Brake: Self-Knowledge Limits the Filtering of Harmful Peer Conformity in LLMs",
+      "url": "https://arxiv.org/abs/2609.18998",
+      "status": "arXiv v1, 2026-09",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Argues a post-hoc filter that keeps beneficial and blocks harmful peer revisions needs knowledge of initial correctness (self-knowledge AUROC about 0.64-0.89 across six families); steering moves harmful and beneficial revisions together; adding information before revision helps. Predicts content-only filters cannot separate valid from invalid peer updates without host-verifiable evidence.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor",
+        "conformity"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S42",
+      "title": "Most LLM Conformity Needs No Speaker: Measuring the Speaker-Free Floor in Peer-Pressure Benchmarks",
+      "url": "https://arxiv.org/abs/2607.05545",
+      "status": "arXiv v1, 2026-07",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "A speaker-free conflicting answer causes harmful revision in 66.5% of initially correct cases vs 10.3% under a plain re-ask (six open-weight LLMs, seven datasets); source attribution should be measured as an increment over this floor. Motivates the speaker-free diagnostic added in plan v0.2.0.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "conformity",
+        "evaluation_method"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S43",
+      "title": "G-Safeguard: A Topology-Guided Security Lens and Treatment on LLM-based Multi-agent Systems",
+      "url": "https://aclanthology.org/2025.acl-long.359/",
+      "status": "ACL 2025 official proceedings (pp. 7261-7276); arXiv 2502.11127",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "GNN anomaly detection on the multi-agent utterance graph plus topological intervention; reports >40% performance recovery under prompt injection. Message- or edge-level isolation is a natural over-defense case for a lone peer correction; the exact intervention was not confirmed this round.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_baseline_candidate"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S44",
+      "title": "Robust Multi-Agent LLMs under Byzantine Faults",
+      "url": "https://arxiv.org/abs/2605.09076",
+      "status": "arXiv v1, 2026-05-09; ICML 2026 listing",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Self-Anchored Consensus filters unreliable messages with (F+1)-robustness graph conditions. Robust aggregation structurally discounts information held by one peer, which is exactly where a lone valid correction sits (cf. S01); candidate network-level filter arm.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_baseline_candidate",
+        "D3_neighbor"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S45",
+      "title": "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2410.07283",
+      "status": "arXiv v1, 2024-10",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Self-replicating injection across agents; LLM Tagging reduces spread when combined with other safeguards; handcrafted attacks, mainly GPT-family. Peer-to-peer injection propagation is established.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "attack_or_threat"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S46",
+      "title": "On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents",
+      "url": "https://proceedings.mlr.press/v267/huang25ay.html",
+      "status": "ICML 2025 official proceedings (PMLR 267, pp. 26202-26226); arXiv 2408.00989",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "AutoTransform/AutoInject create faulty agents and message errors; hierarchical structure is most resilient; Challenger and Inspector recover up to 96.4% of errors. Figures differ between arXiv v3 and ICML; cite the ICML numbers.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D3_neighbor",
+        "D4_baseline_candidate"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S47",
+      "title": "Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?",
+      "url": "https://arxiv.org/abs/2403.06833",
+      "status": "ICLR 2025 (arXiv v3 camera-ready)",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Formal and empirical instruction-data separation measure with the SEP dataset (9,160 examples); all tested models fail to reach high separation; prompt engineering and fine-tuning barely help or hurt utility.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor",
+        "evaluation_method"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S48",
+      "title": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+      "url": "https://arxiv.org/abs/2404.13208",
+      "status": "arXiv v1, 2024-04-19 (OpenAI)",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Trains models to ignore lower-privileged conflicting instructions, with robustness gains and minimal capability loss on GPT-3.5. Privilege-by-source is an existing model-level concept; it does not decide whether lower-privilege factual corrections should be used.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S49",
+      "title": "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations",
+      "url": "https://arxiv.org/abs/2411.00640",
+      "status": "arXiv v1, 2024-11",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Super-population framing, clustered standard errors, paired differences and power analysis for LM evaluations. Adopted as the analysis reference for task-clustered paired estimates; specific formulas not re-read this round.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "evaluation_method"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S50",
+      "title": "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?",
+      "url": "https://arxiv.org/abs/2605.06527",
+      "status": "arXiv v1, 2026-05",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "400 implicit-conflict scenarios with three probes including Implicit Policy Adaptation; best model 55.2% overall; large gap between retrieving updated evidence and acting on it; CUPMem prototype. Direct D1 neighbor and origin of the gap targeted by S20.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D1_neighbor"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
+    },
+    {
+      "id": "S51",
+      "title": "SoK: When Safe Agents Fail Together: The Security of Multi Agent LLM Systems",
+      "url": "https://arxiv.org/abs/2609.00595",
+      "status": "arXiv v1, 2026-09",
+      "checked_scope": "Search-index snippets and abstract summaries only; page not opened this round",
+      "boundary": "Only the reference list was visible via the index; abstract not seen. Used solely as a pointer for further MAS-security neighbors (e.g. GAM-BIT, identity-failure \"Echoing\") to mine before execution; no claims taken from it.",
+      "checked_at": "2026-10-10",
+      "experiment_reproduced": false,
+      "roles": [
+        "D4_neighbor"
+      ],
+      "access_level": "search_index_only",
+      "recheck_note": "2026-10-10: first registered this round; WebFetch and direct arXiv/ACL access were unavailable."
     }
   ]
 }
